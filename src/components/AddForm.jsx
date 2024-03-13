@@ -18,11 +18,11 @@ const newTodo={
 }
 axios
 .post("/todos",newTodo)
-.then(()=>dispatch(newTodo))
-
-dispatch(addTodo(newTodo))
+.then(()=>dispatch(addTodo(newTodo)))
 
 .catch(() => alert('üzgünüz bir sorun oluştu'));
+
+e.target[0].value=""
   }
 
 
